@@ -3,32 +3,91 @@
   padding: 0;
 }
 .box {
-  height: 400px;
-  width: 600px;
+  height: 550px;
+  width: 800px;
   margin: 50px auto;
   border: 2px solid black;
-  border-radius: 15px;
-  box-shadow: 7px 10px 2px gray;
+  border-radius: 20px;
+  box-shadow: 3px 9px 12px gray;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 10px;
-  padding:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   box-sizing: border-box;
 }
-h1
-{
-    color: white;
-    text-shadow: 2px 1px 10px blueviolet;
+.gamebox {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  box-sizing: border-box;
 }
-p{
-    padding: 100px;
-    font-size: 20px; 
+.pc_ch_box {
+  height: 100px;
 }
-.op
-{
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 100px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
+.pcmv {
+  height: 100px;
+}
+.titleComputer,
+.titleUser {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.scorebox {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.us_ch_box,
+.pc_ch_box {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.us_ch_box img,
+.pc_ch_box img {
+  height: 50px;
+}
+#us_rock,
+#us_paper,
+#us_scissor,
+#pc_rock,
+#pc_paper,
+#pc_scissor {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#us_rock:hover,
+#us_paper:hover,
+#us_scissor:hover {
+  background-color: rgb(163, 241, 163);
+  border: 2px solid rgb(163, 241, 163);
+}
+#resetBtn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+  height: 50px;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 0 auto;
+  display: none;
+}
+#resetBtn:hover {
+  background-color: rgb(146, 218, 236);
+  color: white;
+  border: 1px solid rgb(146, 218, 236);
 }

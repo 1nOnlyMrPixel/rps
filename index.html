@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor.com</title>
+    <title>Rock-Paper-Scissor.com</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="box">
-    <h1>Welcome to rock paper & scissor</h1>
-        <p><b>Game Under Development!!! <br>Coming Soon (';</b></p>
-        <button class="op rock">Rock</button>
-        <button class="op paper">Paper</button>
-        <button class="op scissor">Scissor</button>
-</div>
-<script src="./script.js"></script>
+        <h1>Welcome to tic-tac-toe</h1>
+        <div class="gamebox">
+
+            <p class="titleComputer">Computer</p>
+
+            <div class="pc_ch_box">
+                <div id="pc_rock"><img src="./images/rock.png" alt="rock"></div>
+                <div id="pc_paper"><img src="./images/paper.png" alt="paper"></div>
+                <div id="pc_scissor"><img src="./images/scissor.png" alt="scissor"></div>
+            </div>
+
+
+            <p class="titleUser">User</p>
+
+            <div class="us_ch_box">
+                <div id="us_rock"><img id="rockimg" src="./images/rock.png" alt="rock"></div>
+                <div id="us_paper"><img id="paperimg" src="./images/paper.png" alt="paper"></div>
+                <div id="us_scissor"><img id="scissorimg" src="./images/scissor.png" alt="scissor"></div>
+            </div>
+        </div>
+
+        <button id="resetBtn">Reset</button>
+
+        <div class="scorebox">
+            User:<p id="us_score">0</p>
+            PC:<p id="pc_score">0</p>
+        </div>
+
+
+
+    </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
